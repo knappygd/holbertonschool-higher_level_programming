@@ -8,6 +8,3 @@ def uppercase(str):
         else:
             print("{}".format(c), end="")
     print("\n")
-
-uppercase("This is a Test")
-uppercase("Another test")
