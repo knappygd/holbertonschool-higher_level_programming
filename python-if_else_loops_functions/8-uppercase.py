@@ -6,5 +6,3 @@ def uppercase(str):
             c = chr(ord(c) - 32)
             print("{}".format(c))
         print("{}".format(chr(c)))
-
-uppercase("This is a Test")
