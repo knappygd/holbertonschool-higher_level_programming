@@ -7,5 +7,7 @@ def uppercase(str):
             print("{}".format(c), end="")
         else:
             print("{}".format(c), end="")
+    print("\n")
 
 uppercase("This is a Test")
+uppercase("Another test")
