@@ -6,3 +6,4 @@ def new_in_list(my_list, idx, element):
         for i in range(len(my_list)):
             new[i] = my_list[i]    
         new[idx] = element
+        return new
