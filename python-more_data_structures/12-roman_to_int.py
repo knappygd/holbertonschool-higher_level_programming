@@ -2,6 +2,9 @@
 
 def roman_to_int(roman_string):
 
+    if not isinstance(roman_string, str) or not roman_string:
+        return None
+
     num = 0
     roms = {
         'I': 1,
@@ -14,7 +17,8 @@ def roman_to_int(roman_string):
     }
 
     for i in range(len(roman_string)):
-        if (i != len(roman_string) - 1) and (roms[roman_string[i]] < roms[roman_string[i + 1]]):
+        r = roms[roman_string[i]]
+        if i != len(roman_string) - 1 and r < roms[roman_string[i + 1]]:
             num += roms[roman_string[i]] * -1
         else:
             num += roms[roman_string[i]]
