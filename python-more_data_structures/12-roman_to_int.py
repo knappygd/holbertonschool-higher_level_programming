@@ -3,8 +3,7 @@
 def roman_to_int(roman_string):
 
     num = 0
-
-    nums = {
+    roms = {
         'I': 1,
         'V': 5,
         'X': 10,
@@ -15,8 +14,8 @@ def roman_to_int(roman_string):
     }
 
     for i in range(len(roman_string)):
-        if roman_string[i] >= roman_string[i + 1]:
-            num += nums[roman_string[i]]
+        if (i != len(roman_string) - 1) and (roms[roman_string[i]] < roms[roman_string[i + 1]]):
+            num += roms[roman_string[i]] * -1
         else:
-            num += nums[roman_string[i + 1]] - nums[roman_string[i]]
+            num += roms[roman_string[i]]
     return num
