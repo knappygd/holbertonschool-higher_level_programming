@@ -3,6 +3,7 @@
 
 
 class Square:
+    """Comment"""
 
     def __init__(self, size=0):
         """
