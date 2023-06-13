@@ -1,39 +1,43 @@
-#!/usr/bin/python3
+===========================
+How to Use 0-add_integer.py
+===========================
 
-add_integer = __import__('0-add_integer.py').add_integer
+This module defines an integer addition function ``add_integer(a, b=98)``.
 
-success = 9
-fail = 0
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(2, 3)
+    5
 
-# 1
-try:
-    add_integer(1, 2)
-except:
-    fail += 1
+    >>> add_integer(2.9, 0.2)
+    2
 
-# 2
-try:
-    add_integer('a', 2)
-except:
-    fail += 1
+    >>> add_integer(2)
+    100
 
-# 3
-try:
-    add_integer(1, '2')
-except:
-    fail += 1
+    >>> add_integer("hello", 3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
 
-# 4
-try:
-    add_integer('a', 'b')
-except:
-    fail += 1
+    >>> add_integer(2, "hello")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
 
-# 5
-try:
-    add_integer(1.0, 2.0)
-except:
-    fail += 1
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
 
-success -= fail
-print("{} passed and {} failed.".format(success, fail))
+    >>> add_integer(2.3, None)
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    >>> add_integer("hello", "there")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+     
+    >>> add_integer(2, float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer(2, float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
