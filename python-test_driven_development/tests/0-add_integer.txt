@@ -1,0 +1,39 @@
+#!/usr/bin/python3
+
+add_integer = __import__('0-add_integer.py').add_integer
+
+success = 9
+fail = 0
+
+# 1
+try:
+    add_integer(1, 2)
+except:
+    fail += 1
+
+# 2
+try:
+    add_integer('a', 2)
+except:
+    fail += 1
+
+# 3
+try:
+    add_integer(1, '2')
+except:
+    fail += 1
+
+# 4
+try:
+    add_integer('a', 'b')
+except:
+    fail += 1
+
+# 5
+try:
+    add_integer(1.0, 2.0)
+except:
+    fail += 1
+
+success -= fail
+print("{} passed and {} failed.".format(success, fail))
