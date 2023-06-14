@@ -9,6 +9,9 @@ This module defines an integer matrix division function ``say_my_name(first_name
 >>> say_my_name("Jesse", "Pinkman")
 My name is Jesse Pinkman
 
+>>> say_my_name("Jesse")
+My name is Jesse
+
 >>> say_my_name(12, "Pinkman")
 Traceback (most recent call last)
 TypeError: first_name must be a string 
