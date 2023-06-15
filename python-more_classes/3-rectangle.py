@@ -47,4 +47,4 @@ class Rectangle:
             return rec
         for h in range(self.__height):
             rec += ("#" * self.__width) + "\n"
-        return rec
+        return rec[:-1]
