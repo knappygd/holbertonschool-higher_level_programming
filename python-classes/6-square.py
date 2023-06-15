@@ -6,22 +6,12 @@ class Square:
     """Comment"""
 
     def __init__(self, size=0, position=(0, 0)):
-        """
-        Initialize a square
-
-        Args:
-            size (int): The size of the square
-        """
         self.size = size
         self.position = position
 
     @property
     def size(self):
         return self.__size
-
-    @property
-    def position(self):
-        return self.__position
 
     @size.setter
     def size(self, size=0):
@@ -31,6 +21,10 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
+    @property
+    def position(self):
+        return self.__position
 
     @position.setter
     def position(self, value):
@@ -44,13 +38,13 @@ class Square:
     def my_print(self):
         if self.__size == 0:
             print()
-        else:
-            for i in range(self.__position[1]):
-                print()
-            for i in range(self.__size):
-                for k in range(self.__position[0]):
-                    print(" ", end="")
-                for j in range(self.__size):
-                    print('#', end="")
-                    if j == self.__size - 1:
-                        print()
+            return
+        for i in range(0, self.__position[1]):
+            print()
+        for i in range(0, self.__size):
+            for k in range(0, self.__position[0]):
+                print(" ", end="")
+            for j in range(0, self.__size):
+                print('#', end="")
+                if j == self.__size - 1:
+                    print()
