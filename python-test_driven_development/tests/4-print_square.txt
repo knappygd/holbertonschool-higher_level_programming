@@ -1,10 +1,10 @@
 ============================
-How to Use 3-say_my_name.py
+How to Use 4-print_square.py
 ============================
 
-This module defines an integer matrix division function ``say_my_name(first_name, last_name="")``.
+This module defines a square of given size print function ``print_square(size)``.
 
->>> __import__('4-print_square.py').print_square
+>>> print_square = __import__('4-print_square').print_square
 
 >>> print_square(4)
 ####
