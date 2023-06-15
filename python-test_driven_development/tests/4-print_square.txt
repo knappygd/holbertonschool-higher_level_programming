@@ -12,4 +12,18 @@ This module defines an integer matrix division function ``say_my_name(first_name
 ####
 ####
 
+>>> print_square(-1)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+
+>>> print_square("5")
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square(None)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
 >>> print_square()
+Traceback (most recent call last):
+TypeError: print_square() missing 1 required positional argument: 'size'
