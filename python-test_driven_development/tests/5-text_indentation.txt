@@ -1,0 +1,34 @@
+================================
+How to Use 5-text_indentation.py
+================================
+
+This module defines a function for indenting text: ``text_indentation(text)``.
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("Hello.")
+Hello.
+<BLANKLINE>
+
+>>> text_indentation("   Hello.   ")
+Hello.
+<BLANKLINE>
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation(10)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation("\n")
+<BLANKLINE>
+
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
