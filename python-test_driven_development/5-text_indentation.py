@@ -3,6 +3,7 @@
 Print text with a line jump each specific character
 """
 
+
 def text_indentation(text):
     """
     Print jumpline text
