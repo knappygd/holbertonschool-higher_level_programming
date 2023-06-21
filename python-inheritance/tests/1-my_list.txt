@@ -60,7 +60,7 @@ None
 None
 
 >>> my_list4 = MyList()
-    >>> type(my_list4) == MyList
-    True
-    >>> type(my_list4) == list
-    False
+>>> type(my_list4) == MyList
+True
+>>> type(my_list4) == list
+False
