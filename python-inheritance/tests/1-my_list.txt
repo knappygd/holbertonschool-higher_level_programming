@@ -59,8 +59,8 @@ None
 [-2, 1, 3]
 None
 
->>> my_list4 = MyList()
->>> type(my_list4) == MyList
+>>> my_list = MyList()
+>>> type(my_list) == MyList
 True
->>> type(my_list4) == list
+>>> type(my_list) == list
 False
