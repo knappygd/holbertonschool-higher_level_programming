@@ -10,10 +10,10 @@ class BaseGeometry:
     """
 
     def __init__(self, width, height):
-        self.__width = width
         self.integer_validator("width", width)
-        self.__height = height
+        self.__width = width
         self.integer_validator("height", height)
+        self.__height = height
 
     def area(self):
         raise Exception("area() is not implemented")
