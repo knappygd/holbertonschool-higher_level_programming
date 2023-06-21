@@ -4,9 +4,9 @@ Print a sorted list
 """
 
 
-class MyList:
+class MyList(list):
     """
     Prints a list of integers in ascending order
     """
     def print_sorted(self):
-        print(sorted(list))
+        print(sorted(self))
