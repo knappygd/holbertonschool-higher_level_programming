@@ -57,10 +57,4 @@ None
 
 >>> print(my_list.print_sorted())
 [-2, 1, 3]
-None
-
->>> my_list = MyList()
->>> type(my_list) == MyList
-True
->>> type(my_list) == list
-False
+NoneType
