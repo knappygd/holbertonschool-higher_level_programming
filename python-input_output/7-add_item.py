@@ -16,3 +16,5 @@ except FileNotFoundError:
 if len(sys.argv) != 1:
     for i in range(1, len(sys.argv)):
         items.append(sys.argv)
+
+save_to_json_file(items, "add_item.json")
