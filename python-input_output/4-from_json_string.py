@@ -5,6 +5,6 @@ Returns an object represented by a string
 import json
 
 
-def to_json_string(my_obj):
+def from_json_string(my_str):
     """Returns an object represented by a string"""
-    return json.loads(my_obj)
+    return json.loads(my_str)
