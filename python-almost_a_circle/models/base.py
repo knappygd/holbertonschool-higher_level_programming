@@ -31,3 +31,9 @@ class Base:
             else:
                 list_objs_dict = [i.to_dictionary() for i in list_objs]
                 file.write(cls.to_json_string(list_objs_dict))
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or json_string == "[]":
+            return []
+        return json.loads(json_string)
