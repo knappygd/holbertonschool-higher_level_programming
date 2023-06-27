@@ -40,6 +40,7 @@ class Base:
     
     @classmethod
     def create(cls, **dictionary):
+        """ Returns an instance with all attributes set. """
         if cls.__name__ == "Rectangle":
             new = cls(5, 3)
         else:
