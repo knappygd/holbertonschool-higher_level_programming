@@ -93,7 +93,7 @@ class Rectangle(Base):
         """ Add arguments from args. """
         if args is not None and len(args) > 0:
             attrs = ["id", "width", "height", "x", "y"]
-            for i in len(args):
+            for i in range(len(args)):
                 setattr(self, attrs[i], args[i])
         else:
             for k, v in kwargs.items():
