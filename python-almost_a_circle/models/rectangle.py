@@ -100,10 +100,12 @@ class Rectangle(Base):
                 setattr(self, k, v)
 
     def to_dictionary(self):
-        return {
+        dictn = {
             "id": self.id,
             "width": self.width,
             "height": self.height,
             "x": self.x,
             "y": self.y
         }
+
+        return dictn
