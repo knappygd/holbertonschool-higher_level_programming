@@ -90,6 +90,7 @@ class Rectangle(Base):
                                                        self.height)
     
     def update(self, *args):
+        """ Add arguments from args. """
         a = 0
         for arg in len(args):
             if a == 0:
