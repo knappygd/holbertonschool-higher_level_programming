@@ -3,3 +3,4 @@
 SELECT cities.name
 FROM cities, states
 WHERE state.name = 'California'
+ORDER BY cities.id ASC
