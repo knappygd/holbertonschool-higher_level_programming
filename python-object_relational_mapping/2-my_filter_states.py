@@ -20,4 +20,4 @@ if __name__ == "__main__":
 
     for state in cursor.fetchall():
         if state[1] == query:
-            print(state)
+            print("{}".format(state))
