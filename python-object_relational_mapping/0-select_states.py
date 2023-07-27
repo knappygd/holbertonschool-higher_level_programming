@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Lists all states in the database.
+"""Lists all states in the database."""
 import MySQLdb
 import sys
 
