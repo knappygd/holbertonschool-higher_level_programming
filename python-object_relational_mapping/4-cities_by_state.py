@@ -12,6 +12,8 @@ if __name__ == "__main__":
         host="localhost"
     )
 
+    state_name = sys.argv[4]
+
     cursor = db.cursor()
     cursor.execute(
         "SELECT cities.id, cities.name, states.name \
