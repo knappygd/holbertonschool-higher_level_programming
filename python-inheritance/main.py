@@ -1,5 +1,16 @@
 #!/usr/bin/python3
-MyList = __import__('1-my_list').MyList
+"""
+12-main
+"""
+pascal_triangle = __import__('12-pascal_triangle').pascal_triangle
 
-my_list = MyList([1, 1, 1])
-print(my_list)
+def print_triangle(triangle):
+    """
+    Print the triangle
+    """
+    for row in triangle:
+        print("[{}]".format(",".join([str(x) for x in row])))
+
+
+if __name__ == "__main__":
+    print_triangle(pascal_triangle(5))
